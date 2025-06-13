@@ -1,0 +1,27 @@
+.blue-button {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    background-color: $blue;
+    color: #fff;
+    padding: 17px 32px;
+    border-radius: 45px;
+    display: inline-block;
+     border: 1px solid $blue;
+    &:hover{
+        background-color: transparent;
+        color: $blue;
+    }
+}
+.blue-button--light{
+    background-color: transparent;
+    color: $black;
+    border: 1px solid $blue;
+    &:hover{
+        background-color: $blue;
+        color: white;
+    }
+}

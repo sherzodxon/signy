@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul , ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'IBM Plex Sans';
+}
+button{
+    font-family: 'IBM Plex Sans';
+}
+.gradient{
+    background: linear-gradient(293.97deg, rgba(222, 238, 252, 1) -9.96%, rgba(255, 255, 255, 0) 111.88%);
+}

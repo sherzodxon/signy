@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;1,100&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "IBM Plex Sans";
+}
+
+button {
+  font-family: "IBM Plex Sans";
+}
+
+.gradient {
+  background: linear-gradient(293.97deg, rgb(222, 238, 252) -9.96%, rgba(255, 255, 255, 0) 111.88%);
+}
+
+.drop-link {
+  border: none;
+  display: inline-block;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 19%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: rgb(6, 18, 36);
+  position: relative;
+  padding-right: 12px;
+}
+.drop-link::after {
+  width: 8px;
+  height: 4px;
+  position: absolute;
+  content: "";
+  right: 0;
+  background-image: url(../../img/drop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 10px;
+}
+
+.title {
+  font-family: "IBM Plex Serif";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 45.5px;
+  letter-spacing: 0;
+}
+
+.pagination {
+  display: flex;
+  max-width: 80px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.pagination__button {
+  width: 10px;
+  height: 10px;
+  border: 2px solid rgb(16, 100, 229);
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagination__button--active {
+  background-color: rgb(16, 100, 229);
+}
+
+.blue-button {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  background-color: rgb(16, 100, 229);
+  color: #fff;
+  padding: 17px 32px;
+  border-radius: 45px;
+  display: inline-block;
+  border: 1px solid rgb(16, 100, 229);
+}
+.blue-button:hover {
+  background-color: transparent;
+  color: rgb(16, 100, 229);
+}
+
+.blue-button--light {
+  background-color: transparent;
+  color: rgb(6, 18, 36);
+  border: 1px solid rgb(16, 100, 229);
+}
+.blue-button--light:hover {
+  background-color: rgb(16, 100, 229);
+  color: white;
+}
+
+.container {
+  max-width: 1232px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 36px;
+  padding-bottom: 20px;
+  background-color: rgb(216, 241, 240);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  margin-right: 32px;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-item {
+  margin-right: 36px;
+}
+.header__nav-item:last-child {
+  margin-right: 0;
+}
+
+.header__auth {
+  margin-right: 25px;
+}
+
+.header__nav-item-link {
+  color: rgb(6, 18, 36);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 19%;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.auth__button {
+  border: none;
+  display: inline-block;
+  background-color: transparent;
+  padding: 8px 32px;
+  font-family: "IBM Plex Sans";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+  border-radius: 43px;
+  border: 1px solid rgb(16, 100, 229);
+  cursor: pointer;
+}
+
+.auth__button--signin {
+  background-color: transparent;
+  color: rgb(6, 18, 36);
+  margin-right: 24px;
+}
+.auth__button--signin:hover {
+  background-color: rgb(16, 100, 229);
+  color: white;
+}
+
+.auth__button--signup {
+  color: #fff;
+  background-color: rgb(16, 100, 229);
+}
+.auth__button--signup:hover {
+  background-color: transparent;
+  color: rgb(16, 100, 229);
+}
+
+.intro {
+  background-color: rgb(216, 241, 240);
+}
+
+.intro__container {
+  padding: 108px 0 29px 0;
+}
+
+.intro__content {
+  max-width: 586px;
+  padding-bottom: 98px;
+}
+
+.intro__content-list {
+  display: flex;
+  margin: 14px 0;
+  align-items: center;
+}
+
+.intro__content-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 4%;
+  vertical-align: middle;
+  padding-right: 32px;
+  margin-right: 16px;
+  position: relative;
+  opacity: 0.6;
+}
+.intro__content-item::after {
+  position: absolute;
+  width: 16px;
+  height: 3px;
+  content: "";
+  background-color: rgb(16, 100, 229);
+  right: 0;
+  top: 9px;
+}
+.intro__content-item:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+.intro__content-item:last-child::after {
+  display: none;
+}
+
+.intro__content-item--active {
+  opacity: 1;
+  font-size: 24px;
+}
+.intro__content-item--active::after {
+  top: 13px;
+}
+
+.intro__content-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  margin-bottom: 14px;
+}
+
+.intro__content-description {
+  max-width: 454px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 4%;
+  margin-bottom: 48px;
+}
+
+.benefits {
+  padding: 54px 0 74px;
+}
+
+.benefits__container {
+  max-width: 985px;
+}
+
+.benefits__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits__item {
+  max-width: 306px;
+  padding-left: 80px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.benefits__item:nth-child(1) {
+  background-image: url("../../img/speedometer.png");
+}
+.benefits__item:nth-child(2) {
+  background-image: url("../../img/positive-vote.png");
+  max-width: 265px;
+}
+.benefits__item:nth-child(3) {
+  background-image: url("../../img/piggy-bank.png");
+  max-width: 282px;
+}
+
+.benefits__item-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 45px;
+  letter-spacing: 0;
+}
+
+.benefits__item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 4%;
+}
+
+.info {
+  padding-top: 57px;
+  padding-bottom: 92px;
+  background-color: rgb(216, 241, 240);
+}
+
+.info__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info__item:nth-child(even) {
+  flex-direction: row-reverse;
+  margin-top: 57px;
+}
+.info__item:nth-child(even) .info__item-content {
+  max-width: 533px;
+}
+
+.info__item-content {
+  max-width: 530px;
+}
+
+.info__item-title {
+  margin-bottom: 18px;
+}
+
+.info__item-text {
+  padding-left: 18px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+  position: relative;
+}
+.info__item-text::before {
+  position: absolute;
+  width: 8px;
+  height: 28px;
+  content: "-";
+  left: 0;
+}
+
+.info__item-link {
+  margin-top: 19px;
+}
+
+.pricing {
+  padding: 57px 0 98px;
+}
+
+.pricing__title {
+  text-align: center;
+  margin-bottom: 63px;
+}
+
+.pricing__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing__item {
+  padding: 32px;
+  background-color: rgb(216, 241, 240);
+  width: 256px;
+  border-radius: 4px;
+}
+.pricing__item:last-child .pricing__item-text {
+  margin-bottom: 84px;
+}
+
+.pricing__item-title {
+  margin-bottom: 44px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0;
+}
+
+.pricing__button {
+  padding: 9px 15px 11px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 3%;
+  text-align: center;
+  display: block;
+}
+
+.pricing__item-text {
+  margin-bottom: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.pricing__item-price {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0;
+  margin-bottom: 48px;
+}
+
+.pricing__item-price-currency {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.documents {
+  padding: 43px 0;
+  background-color: rgb(216, 241, 240);
+}
+
+.documents__fallowed-info {
+  font-weight: 500;
+  font-size: 73px;
+  line-height: 48px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.documents__fallowed-label {
+  font-family: "IBM Plex Serif";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.documents__description {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+  max-width: 478px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.friends {
+  padding-top: 47px;
+  padding-bottom: 58px;
+}
+
+.friends__container {
+  max-width: 1033px;
+}
+
+.friends__title {
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+.friends__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}

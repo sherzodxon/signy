@@ -1,0 +1,25 @@
+.drop-link {
+    border: none;
+    display: inline-block;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 19%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: $black;
+    position: relative;
+    padding-right: 12px;
+    &::after{
+        width: 8px;
+        height: 4px;
+        position: absolute;
+        content: '';
+        right: 0;
+        background-image: url(../../img/drop.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 10px;
+    }
+}

@@ -1,0 +1,41 @@
+.benefits {
+    padding: 54px 0 74px;
+}
+.benefits__container {
+    max-width: 985px;
+}
+.benefits__list {
+    display: flex;
+    justify-content: space-between;
+}
+.benefits__item {
+    max-width: 306px;
+    padding-left: 80px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    &:nth-child(1) {
+        background-image: url("../../img/speedometer.png");
+    }
+    &:nth-child(2) {
+        background-image: url("../../img/positive-vote.png");
+        max-width: 265px;
+    }
+    &:nth-child(3) {
+        background-image: url("../../img/piggy-bank.png");
+        max-width: 282px;
+    }
+}
+.benefits__item-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 45px;
+    letter-spacing: 0;
+
+}
+.benefits__item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 4%;
+
+}

@@ -1,0 +1,33 @@
+.auth__button {
+    border: none;
+    display: inline-block;
+    background-color: transparent;
+    padding: 8px 32px;
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.9px;
+    text-transform: uppercase;
+    border-radius: 43px;
+    border: 1px solid $blue;
+    cursor: pointer;
+}
+.auth__button--signin{
+    background-color: transparent;
+    color: $black;
+    margin-right: 24px;
+    &:hover{
+        background-color: $blue;
+        color: white;
+    }
+
+}
+.auth__button--signup{
+    color: #fff;
+    background-color: $blue;
+    &:hover{
+        background-color: transparent;
+        color: $blue;
+    }
+}

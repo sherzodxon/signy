@@ -1,0 +1,17 @@
+.pagination{
+    display: flex;
+    max-width: 80px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.pagination__button{
+    width: 10px;
+    height: 10px;
+    border: 2px solid $blue;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pagination__button--active{
+    background-color: $blue;
+}

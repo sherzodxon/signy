@@ -1,0 +1,30 @@
+.documents {
+    padding: 43px 0;
+    background-color: $background;
+}
+
+.documents__fallowed-info {
+    font-weight: 500;
+    font-size: 73px;
+    line-height: 48px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.documents__fallowed-label {
+    font-family: "IBM Plex Serif";
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.documents__description {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0;
+    max-width: 478px;
+    margin: 0 auto;
+    text-align: center;
+}

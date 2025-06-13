@@ -1,0 +1,39 @@
+.header {
+    padding-top: 36px;
+    padding-bottom: 20px;
+    background-color: $background;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+.header__nav {
+    margin-right: 32px;
+}
+.header__nav-list {
+    display: flex;
+}
+.header__nav-item {
+    margin-right: 36px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.header__auth {
+    margin-right: 25px;
+}
+.header__nav-item-link {
+    color: $black;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 19%;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+}
