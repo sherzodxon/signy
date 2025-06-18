@@ -16,6 +16,7 @@ a {
 
 body {
   font-family: "IBM Plex Sans";
+  color: rgb(6, 18, 36);
 }
 
 button {
@@ -481,4 +482,52 @@ button {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+}
+
+.product {
+  padding-top: 38px;
+  padding-bottom: 44px;
+  background-color: rgb(216, 241, 240);
+}
+
+.product__title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.product__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__item {
+  position: relative;
+}
+.product__item::after {
+  position: absolute;
+  width: 374px;
+  height: 395px;
+  content: "";
+  top: 0;
+  background: linear-gradient(293.97deg, #FFFFFF -9.96%, rgba(255, 255, 255, 0) 111.88%);
+}
+
+.product__item-box {
+  margin-top: 14px;
+  padding: 0 16px;
+  max-width: 289px;
+}
+
+.product__item-date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.product__item-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+  margin-top: 6px;
 }
