@@ -641,3 +641,51 @@ button {
 .faqs__input:checked + .faqs__text-question::before {
   content: "-";
 }
+
+.contact {
+  padding-top: 56px;
+  padding-bottom: 98px;
+}
+
+.contact__title {
+  text-align: center;
+}
+
+.contact__form {
+  max-width: 625px;
+  margin: 30px auto 0;
+}
+
+.contact__form-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact__form-input-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__input {
+  border: 1px solid rgb(16, 100, 229);
+  border-radius: 37px;
+  flex-grow: 1;
+  margin-right: 18px;
+  padding: 0 10px;
+}
+.contact__input:focus {
+  outline: 2px solid rgb(16, 100, 229);
+}
+
+.contact__button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 19%;
+  padding: 12px 47px;
+  cursor: pointer;
+}
