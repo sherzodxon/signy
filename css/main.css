@@ -127,6 +127,7 @@ button {
 .container {
   max-width: 1232px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .header {
@@ -144,6 +145,10 @@ button {
 .header__menu {
   display: flex;
   align-items: center;
+}
+
+.header__menu-logo {
+  display: none;
 }
 
 .header__nav {
@@ -175,6 +180,115 @@ button {
   text-transform: uppercase;
 }
 
+.header__auth-button {
+  margin-right: 24px;
+}
+
+.header__checkbox-label {
+  display: none;
+  width: 27px;
+  height: 27px;
+  background: url("../../img/open.png") no-repeat center center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.header__checkbox:checked + .header__checkbox-label {
+  background: url("../../img/close.png") no-repeat center center;
+  position: absolute;
+  right: 52px;
+  top: 43px;
+  z-index: 99;
+}
+
+.header__gradient {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  background-color: rgb(6, 18, 36);
+  display: none;
+}
+
+@media only screen and (max-width: 980px) {
+  .header__nav-item {
+    margin-right: 16px;
+  }
+  .header__nav {
+    margin-right: 25px;
+  }
+  .header__auth-button {
+    margin-right: 16px;
+  }
+  .header__auth {
+    margin-right: 16px;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .header__checkbox-label {
+    display: block;
+  }
+  .header__menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 450px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    padding: 106px 45px 45px;
+  }
+  .header__menu .header__menu-logo {
+    display: inline-block;
+    position: absolute;
+    top: 35px;
+  }
+  .header__checkbox:checked ~ .header__menu {
+    display: block;
+    z-index: 2;
+  }
+  .header__checkbox:checked ~ .header__gradient {
+    display: block;
+  }
+  .header__nav {
+    margin: 0;
+  }
+  .header__nav-list {
+    border-top: 1px solid rgb(16, 100, 229);
+    flex-direction: column;
+    width: 100%;
+  }
+  .header__nav-item {
+    margin: 0 0 44px;
+  }
+  .header__nav-item:first-child {
+    margin-top: 44px;
+  }
+  .header__nav-item-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 19%;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+  .header__auth {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 28px;
+    width: 100%;
+    border-bottom: 1px solid rgb(16, 100, 229);
+    margin-bottom: 15px;
+  }
+  .header__auth-button {
+    margin: 0;
+    display: block;
+    margin-bottom: 24px;
+  }
+}
 .auth__button {
   border: none;
   display: inline-block;
@@ -194,7 +308,6 @@ button {
 .auth__button--signin {
   background-color: transparent;
   color: rgb(6, 18, 36);
-  margin-right: 24px;
 }
 .auth__button--signin:hover {
   background-color: rgb(16, 100, 229);
