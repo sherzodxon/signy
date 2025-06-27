@@ -75,6 +75,11 @@ button {
   letter-spacing: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+}
 .pagination {
   display: flex;
   max-width: 80px;
@@ -328,7 +333,7 @@ button {
 }
 
 .intro__container {
-  padding: 108px 0 29px 0;
+  padding: 108px 10px 29px 10px;
 }
 
 .intro__content {
@@ -361,6 +366,7 @@ button {
   background-color: rgb(16, 100, 229);
   right: 0;
   top: 9px;
+  z-index: 0;
 }
 .intro__content-item:last-child {
   margin-right: 0;
@@ -396,6 +402,11 @@ button {
   margin-bottom: 48px;
 }
 
+@media only screen and (max-width: 768px) {
+  .intro__content {
+    max-width: 344px;
+  }
+}
 .benefits {
   padding: 54px 0 74px;
 }
