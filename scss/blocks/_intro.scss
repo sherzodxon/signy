@@ -65,7 +65,17 @@
     margin-bottom: 48px;
 }
 @media only screen and (max-width:$tablet){
+    .intro__container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
     .intro__content{
         max-width: 344px;
+    }
+}
+@media only screen and (max-width:$tablet){
+     .intro__container{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

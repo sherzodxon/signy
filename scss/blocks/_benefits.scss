@@ -39,3 +39,47 @@
     letter-spacing: 4%;
 
 }
+@media only screen and (max-width:890px) {
+    .benefits__item {
+        max-width: 250px;
+        padding-left: 57px;
+        background-size: 42px;
+    }
+}
+@media only screen and (max-width:$tablet) {
+    .benefits__item {
+        max-width: 221px;
+        background-position: left 11px;
+        margin-right: 4px;
+        &:nth-child(2) {
+            max-width: 221px;
+        }
+        &:nth-child(3) {
+            max-width: 221px;
+            margin-right: 0;
+        }
+    }
+    .benefits__item-title {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .benefits__list {
+        flex-direction: column;
+      
+    }
+    .benefits__item {
+        max-width: 100%;
+        padding-left: 75px;
+        background-position: left center;
+          margin: 0;
+        margin-bottom: 36px;
+        &:nth-child(2) {
+            max-width: 100%;
+        }
+        &:nth-child(3) {
+            max-width: 100%;
+            margin-bottom: 0;
+        }
+    }
+}

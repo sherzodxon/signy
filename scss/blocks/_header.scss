@@ -102,10 +102,11 @@
     }
     .header__checkbox:checked ~ .header__menu {
         display: block;
-        z-index: 2;
+        z-index: 3;
     }
     .header__checkbox:checked ~ .header__gradient {
         display: block;
+        z-index: 1;
 
     }
     .header__nav {
@@ -145,5 +146,12 @@
         margin: 0;
         display: block;
         margin-bottom: 24px;
+    }
+}
+@media only screen and (max-width:440px){
+    .header__menu{
+        width: 380px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
