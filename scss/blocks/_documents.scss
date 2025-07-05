@@ -28,3 +28,26 @@
     margin: 0 auto;
     text-align: center;
 }
+@media only screen and (max-width:$tablet) {
+    .documents__fallowed-info {
+        font-size: 56px;
+        line-height: 48px;
+        letter-spacing: 0;
+        text-align: center;
+
+    }
+    .documents__fallowed-label {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+@media only screen and (max-width:465px) {
+    .documents__fallowed-info {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .documents__fallowed-label {
+        font-size: 20px;
+        line-height: 22px;
+    }
+}

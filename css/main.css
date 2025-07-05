@@ -744,6 +744,21 @@ button {
   line-height: 24px;
 }
 
+@media only screen and (max-width: 1045px) {
+  .pricing__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .pricing__list {
+    gap: 0;
+  }
+  .pricing__item {
+    margin-bottom: 20px;
+  }
+}
 .documents {
   padding: 43px 0;
   background-color: rgb(216, 241, 240);
@@ -777,6 +792,28 @@ button {
   text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .documents__fallowed-info {
+    font-size: 56px;
+    line-height: 48px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  .documents__fallowed-label {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+@media only screen and (max-width: 465px) {
+  .documents__fallowed-info {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .documents__fallowed-label {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
 .friends {
   padding-top: 47px;
   padding-bottom: 58px;
